@@ -1,0 +1,12 @@
+{
+    "name": "pulumi-eks-argocd",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18"
+    },
+    "dependencies": {
+        "@pulumi/eks": "^2.2.1",
+        "@pulumi/kubernetes": "^4.7.1",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}

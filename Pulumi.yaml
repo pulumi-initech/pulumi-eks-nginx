@@ -1,0 +1,8 @@
+name: pulumi-eks-cloudecho
+runtime: nodejs
+description: An EKS cluster with ArgoCD installed in the App-of-apps pattern
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: typescript
+  vpcStackRef: initech/aws-vpc-base-cs/dev
