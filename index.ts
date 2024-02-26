@@ -18,8 +18,10 @@ const cluster = new eks.Cluster(`${clusterName}`, {
   vpcId: vpcId,
   privateSubnetIds: privateSubnetIds,
   publicSubnetIds: publicSubnetIds, 
-  fargate: true,
   createOidcProvider: true,
+  minSize: 1,
+  maxSize: 3,
+  desiredCapacity: 2,
   tags: {},
 });
 
@@ -58,7 +60,7 @@ const deployment = new k8s.apps.v1.Deployment(name,
         },
     },
     {
-        provider,
+        provider
     },
 );
 
