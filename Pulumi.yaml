@@ -1,4 +1,4 @@
-name: pulumi-eks-cloudecho
+name: pulumi-eks-nginx
 runtime: nodejs
 description: An EKS cluster with ArgoCD installed in the App-of-apps pattern
 config:
